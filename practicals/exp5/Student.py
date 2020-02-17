@@ -14,7 +14,7 @@ class Student:
 
         def Result(self, ):
             student_class = {
-                '10': 'outstanding', 
+                '10': 'outstanding',
                 '9': 'Excellent',
                 '8': 'Very Good',
                 '7': 'Good',
@@ -33,7 +33,7 @@ class Student:
                     print (self.pointer, "\t \t",   student_class['9'] )
             elif self.pointer <= 8 and self.pointer > 7:
                     print (self.pointer, "\t \t",   student_class['8'] )
-            elif self.pointer == 7 and self.pointer > 6:
+            elif self.pointer <= 7 and self.pointer > 6:
                     print (self.pointer, "\t \t",   student_class['7'] )
             elif self.pointer <= 6 and self.pointer > 5:
                     print (self.pointer, "\t \t",   student_class['6'] )
@@ -43,6 +43,7 @@ class Student:
                     print (self.pointer, "\t \t",   student_class['4'] )
             else:
                 print (self.pointer, "\t \t",   student_class['3'])
-                
+
+
 s1 = Student()
 s1.Result()
